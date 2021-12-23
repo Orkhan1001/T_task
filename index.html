@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="./Styles/style.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+
+            <!-- Left Side -->
+            <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
+                <div id="tLeftSide">
+
+                    <div>
+                        <label for="id_tElements">What Do You Want To Create</label>
+                        <select onchange="tClickCounter(this); tSelectedElement(this);" class="form-control" name="tElements" id="id_tElements">
+                            <option value="">-SELECT-</option>
+                            <option value="H1">Header</option>
+                            <option value="P">Text</option>
+                            <!-- <option value="UL">List</option>
+                            <option value="DIV">Figure</option> -->
+                        </select>
+                    </div>
+
+                    <div id="id_headerOptions">
+                        <div id="id_HeaderText"></div>
+                        <div id="id_FontFamily"></div>
+                        <div id="id_FontStyle"></div>
+                        <div id="id_FontSize"></div>
+                        <div id="id_Color"></div>
+                        <div id="id_headerSubmit"></div>
+                    </div>
+
+                    <div id="id_textOptions">
+                        <div id="id_textP"></div>
+                        <div id="id_textSubmit"></div>
+                    </div>
+
+                    <div id="id_listOptions">
+                        <div id="id_ListStyle"></div>
+                        <div id="id_ListItems"></div>
+                    </div>
+
+                    <!-- Ending Distance -->
+                    <div style="height: 20px; background: transparent"></div>
+                </div>
+            </div>
+
+
+
+            <!-- Right Side -->
+            <div class="col-xs-12 col-sm-7 col-md-8 col-lg-9">
+                <div id="tRightSide"></div>
+            </div>
+        </div>
+        <div style="height: 20px; background: transparent"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="./Scripts/main.js"></script>
+    </body>
+</html>
